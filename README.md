@@ -1,7 +1,7 @@
 # PLW — Project Learning Workflow
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub release](https://img.shields.io/badge/version-1.0.0-blue)]()
+[![Release](https://img.shields.io/github/v/release/Alanloong/PLW)](https://github.com/Alanloong/PLW/releases)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-required-purple)](https://claude.ai/claude-code)
 
 *让 Claude 帮你学习任何 GitHub 开源项目。*
@@ -60,7 +60,7 @@ npm install -g @anthropic-ai/claude-code
 
 ### 第1步：下载 PLW（本仓库）
 
-点击本页面右上角的绿色「Code」按钮 →「Download ZIP」。
+前往 [Releases 页面](https://github.com/Alanloong/PLW/releases) 下载最新版本的 zip 包。
 
 下载完成后解压，**建议放到非系统盘**（比如 `D:\PLW\`），避免权限问题。
 

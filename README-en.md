@@ -1,7 +1,7 @@
 # PLW — Project Learning Workflow
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub release](https://img.shields.io/badge/version-1.0.0-blue)]()
+[![Release](https://img.shields.io/github/v/release/Alanloong/PLW)](https://github.com/Alanloong/PLW/releases)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-required-purple)](https://claude.ai/claude-code)
 
 *A Claude-powered workflow for learning any GitHub open-source project.*
@@ -52,16 +52,12 @@ After these changes, Claude will communicate in your default language. The workf
 
 ## 🚀 Quick Start
 
-```bash
-# 1. Download a GitHub project zip, extract to repos/ folder
-#    → repos/[project-name]-master/
-
-# 2. Start Claude Code in the PLW root directory
-claude
-
-# 3. Run the learning workflow
-/learn https://github.com/username/project
-```
+1. Download PLW from [Releases page](https://github.com/Alanloong/PLW/releases) and extract it
+2. Install Claude Code: `npm install -g @anthropic-ai/claude-code`
+3. Download the GitHub project you want to learn, extract to `PLW/repos/`
+4. Open terminal in the PLW folder, type `claude`
+5. In Claude, type `/learn https://github.com/username/project`
+6. Read the generated course in `PLW/courses/`
 
 ### Workflow
 
