@@ -15,7 +15,7 @@
 
 ## 📖 这是什么
 
-一个标准化的github项目学习工作流框架。当你提供 GitHub 项目地址时，自动执行：
+一个标准化的 GitHub 项目学习工作流框架。当你提供 GitHub 项目地址时，自动执行：
 
 ```
 分析项目 → 了解用户 → 生成课程 → 逐课推进学习
@@ -29,16 +29,13 @@
 
 ### 1. 安装 Claude Code（必需）
 
-打开命令提示符，输入以下命令：
-
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
 安装好后输入 `claude --version`，能看到版本号就说明装好了。
 
-> 不会操作的话，直接打开 Claude 问它："帮我安装 Claude Code"，它会一步步教你。
-> 视频教程参考：https://www.bilibili.com/video/BV1NvRyBzEhq
+> 安装教程参考：https://www.bilibili.com/video/BV1NvRyBzEhq
 
 ### 2. Markdown 阅读器（推荐）
 
@@ -69,15 +66,13 @@ npm install -g @anthropic-ai/claude-code
 
 ### 第2步：安装 Claude Code
 
-打开命令提示符（在 PLW 文件夹的空白处**按住 Shift 键 + 鼠标右键**，选择"在终端中打开"），输入：
+打开命令提示符（Windows 搜索框输入 `cmd` 回车），输入：
 
 ```bash
 npm install -g @anthropic-ai/claude-code
 ```
 
-> 如果你不会操作命令行，直接打开 Claude 问它："我想安装 Claude Code，帮我一步步操作"，它会手把手教你。
-
-安装视频教程：[https://www.bilibili.com/video/BV1NvRyBzEhq](https://www.bilibili.com/video/BV1NvRyBzEhq)
+> 安装教程参考：https://www.bilibili.com/video/BV1NvRyBzEhq
 
 ### 第3步：下载你要学习的 GitHub 项目
 
