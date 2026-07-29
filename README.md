@@ -15,7 +15,7 @@
 
 ## 📖 这是什么
 
-一个标准化的项目学习工作流框架。当你提供 GitHub 项目地址时，自动执行：
+一个标准化的github项目学习工作流框架。当你提供 GitHub 项目地址时，自动执行：
 
 ```
 分析项目 → 了解用户 → 生成课程 → 逐课推进学习
@@ -27,32 +27,33 @@
 
 ## 📋 前置要求
 
-- **Claude Code**（CLI）— AI 工作流引擎
-- **Markdown 阅读器** — 用于阅读生成的课程文件
+### 1. 安装 Claude Code（必需）
 
-### 推荐的 Markdown 阅读器：Notepad++ + MarkdownViewerPlusPlus
+打开命令提示符，输入以下命令：
 
-生成的课程是 `.md` 格式，直接用记事本打开排版混乱。推荐安装 Notepad++ 并安装 Markdown 预览插件：
+```bash
+npm install -g @anthropic-ai/claude-code
+```
 
-**第1步：下载安装 Notepad++**
+安装好后输入 `claude --version`，能看到版本号就说明装好了。
+
+> 不会操作的话，直接打开 Claude 问它："帮我安装 Claude Code"，它会一步步教你。
+> 视频教程参考：https://www.bilibili.com/video/BV1NvRyBzEhq
+
+### 2. Markdown 阅读器（推荐）
+
+课程文件是 `.md` 格式，直接用记事本打开排版混乱。推荐安装 Notepad++ 并装一个 Markdown 预览插件：
+
+**安装 Notepad++**
 
 前往官网下载安装包：
 [https://notepad-plus-plus.org/downloads/](https://notepad-plus-plus.org/downloads/)
 
 安装时选默认选项即可。
 
-**第2步：安装 MarkdownViewerPlusPlus 插件**
+**安装 MarkdownViewerPlusPlus 插件**
 
-```
-方法一（推荐）：通过 Notepad++ 插件管理器安装
-  打开 Notepad++ → 菜单栏「插件」→「插件管理」
-  → 搜索 "MarkdownViewerPlusPlus" → 勾选 →「安装」
-
-方法二：手动安装
-  1. 下载插件：https://github.com/nea/MarkdownViewerPlusPlus/releases
-  2. 将 _MarkdownViewerPlusPlus.dll_ 复制到 Notepad++ 的 plugins/ 文件夹
-  3. 重启 Notepad++
-```
+打开 Notepad++ → 菜单栏「插件」→「插件管理」→ 搜索 "MarkdownViewerPlusPlus" → 勾选 →「安装」
 
 安装后，打开 `.md` 文件，点击菜单「插件」→「MarkdownViewerPlusPlus」→「Preview」即可实时预览排版效果。
 
@@ -60,17 +61,60 @@
 
 ## 🚀 快速开始
 
+### 第1步：下载 PLW（本仓库）
+
+点击本页面右上角的绿色「Code」按钮 →「Download ZIP」。
+
+下载完成后解压，**建议放到非系统盘**（比如 `D:\PLW\`），避免权限问题。
+
+### 第2步：安装 Claude Code
+
+打开命令提示符（在 PLW 文件夹的空白处**按住 Shift 键 + 鼠标右键**，选择"在终端中打开"），输入：
+
 ```bash
-# 1. 下载想学习的 GitHub 项目 zip
-#    解压到 PLW/repos/ 文件夹
-#    → repos/[项目名]-master/
+npm install -g @anthropic-ai/claude-code
+```
 
-# 2. 在 PLW 根目录启动 Claude Code
+> 如果你不会操作命令行，直接打开 Claude 问它："我想安装 Claude Code，帮我一步步操作"，它会手把手教你。
+
+安装视频教程：[https://www.bilibili.com/video/BV1NvRyBzEhq](https://www.bilibili.com/video/BV1NvRyBzEhq)
+
+### 第3步：下载你要学习的 GitHub 项目
+
+打开你想学的 GitHub 项目页面，点击「Code」→「Download ZIP」。
+
+把下载好的 zip 解压，将解压出来的文件夹**整个移动**到 `PLW/repos/` 里面：
+
+```
+PLW/                         ← 你第1步解压出来的文件夹
+├── repos/                   ← 把项目放这里
+│   └── [项目名]-master/     ← 解压后移进来的项目文件夹
+├── courses/
+├── .claude/
+└── ...
+```
+
+### 第4步：启动 Claude Code 开始学习
+
+在 PLW 文件夹的空白处**按住 Shift + 鼠标右键**，选择"在终端中打开"，输入：
+
+```bash
 claude
+```
 
-# 3. 运行学习工作流
+启动后，在 Claude 对话框中输入：
+
+```
 /learn https://github.com/用户名/项目名
 ```
+
+> 把你想要学习的 GitHub 项目地址贴进来。
+
+然后 Claude 会自动开始：分析项目 → 了解你的基础 → 生成课程 → 逐课推进。
+
+### 第5步：阅读课程
+
+课程文件会生成在 `PLW/courses/` 文件夹里，用 Notepad++ 打开即可看到排版好的内容。
 
 ### 工作流程
 
