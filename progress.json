@@ -1,0 +1,18 @@
+{
+  "project": {
+    "name": "",
+    "url": "",
+    "learnScenario": ""
+  },
+  "course": {
+    "totalLessons": 0,
+    "currentLesson": 0,
+    "completedLessons": [],
+    "currentLessonTitle": ""
+  },
+  "user": {
+    "skillLevel": "",
+    "dailyMinutes": 0
+  },
+  "updatedAt": ""
+}

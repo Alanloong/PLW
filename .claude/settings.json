@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(course-generator)",
+      "WebFetch(domain:deepwiki.com)",
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "Bash(mkdir *)",
+      "Glob",
+      "Grep"
+    ]
+  }
+}
